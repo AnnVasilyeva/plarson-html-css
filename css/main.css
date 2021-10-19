@@ -1,0 +1,85 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  color: #000;
+  background-color: #fff;
+}
+
+/*Убрать полосу прокрутки для всей страницы*/
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+.project-header {
+  width: 100%;
+  height: 50px;
+  border: 2px solid red;
+  box-sizing: border-box;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.project-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden; 
+  text-align: left; 
+}
+
+.project-main-users {
+  width: 200px;
+  height: 100%;
+  border: 2px solid orange;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.user-item {
+  margin-bottom: 10px;
+}
+
+.project-main-chat {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border: 2px solid violet;
+  box-sizing: border-box;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.chat-message {
+  margin-bottom: 10px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.chat-message-left {
+  align-self: flex-start;
+}
+
+.chat-message-right {
+  align-self: flex-end;
+}
+
+.project-footer {
+  width: 100%;
+  height: 100px;
+}
+
+.project-footer-input {
+  width: 100%;
+  height: 100%;
+  border: 2px solid green;
+  box-sizing: border-box;
+  text-align: left;
+}
